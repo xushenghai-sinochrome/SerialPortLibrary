@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>29085c48-481c-4fe8-808c-c025f14ebfa7</ProjectGuid>
+    <ProjectGuid>{29085C48-481C-4FE8-808C-C025F14EBFA7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SerialPortAPI</RootNamespace>
@@ -31,24 +31,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AbstractInterfaces\AbstractScanCodeInterface.cs" />
+    <Compile Include="AbstractInterfaces\AbstractSerialPortInterface.cs" />
+    <Compile Include="AppContexts\LeiCaContext.cs" />
+    <Compile Include="AppContexts\SerialContext.cs" />
+    <Compile Include="AppInterfaces\Appinterface.cs" />
+    <Compile Include="AppInterfaces\ContextInterface.cs" />
+    <Compile Include="AppInterfaces\ScanCodeInterface.cs" />
+    <Compile Include="AppInterfaces\SerialPortInterface.cs" />
+    <Compile Include="AppReaders\ScanCodeReader.cs" />
+    <Compile Include="AppReaders\SerialPortReader.cs" />
+    <Compile Include="AppUtils\AppTimeLoop.cs" />
+    <Compile Include="AppUtils\MicroscopeUtil.cs" />
+    <Compile Include="AppUtils\SerialPortUtil.cs" />
+    <Compile Include="AppUtils\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
