@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{29085C48-481C-4FE8-808C-C025F14EBFA7}</ProjectGuid>
+    <ProjectGuid>{76EB2BA5-71FB-40A6-98D3-DA0575147681}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SerialPortAPI</RootNamespace>
-    <AssemblyName>SerialPortAPI</AssemblyName>
+    <RootNamespace>LeiCaMicroscopeAPI</RootNamespace>
+    <AssemblyName>LeiCaMicroscopeAPI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,20 +45,19 @@
     <Compile Include="AbstractInterfaces\AbstractSerialPortInterface.cs" />
     <Compile Include="AppContexts\LeiCaContext.cs" />
     <Compile Include="AppContexts\SerialContext.cs" />
-    <Compile Include="AppControllers\ScanCodeController.cs" />
-    <Compile Include="AppControllers\SerialPortController.cs" />
     <Compile Include="AppInterfaces\Appinterface.cs" />
     <Compile Include="AppInterfaces\ContextInterface.cs" />
+    <Compile Include="AppInterfaces\ILMicroscopeInterface.cs" />
     <Compile Include="AppInterfaces\ScanCodeInterface.cs" />
     <Compile Include="AppInterfaces\SerialPortInterface.cs" />
     <Compile Include="AppReaders\ScanCodeReader.cs" />
     <Compile Include="AppReaders\SerialPortReader.cs" />
     <Compile Include="AppUtils\AppTimeLoop.cs" />
+    <Compile Include="AppUtils\MicroscopeControllerID.cs" />
     <Compile Include="AppUtils\MicroscopeUtil.cs" />
     <Compile Include="AppUtils\SerialPortUtil.cs" />
     <Compile Include="AppUtils\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

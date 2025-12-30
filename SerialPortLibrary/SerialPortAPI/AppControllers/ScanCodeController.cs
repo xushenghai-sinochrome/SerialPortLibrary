@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppInterfaces;
 using AppUtils;
-namespace IScanCode
+namespace SerialPortAPI
 {
     public class ScanCodeController
     {
@@ -113,24 +113,7 @@ namespace IScanCode
             catch (Exception) { }
             return default(byte[]);
         }
-        public static string MethodWaitDone     (ScanCodeInterface manager, string buffer, string frameTail, int timeout = 100, int waittime = 50)
-        {
-            try
-            {
-                return manager.MethodWaitDone(manager, buffer, frameTail, timeout, waittime);
-            }
-            catch (Exception) { }
-            return default(string);
-        }
-        public static byte[] MethodWaitDone     (ScanCodeInterface manager, byte[] buffer, string frameTail, int timeout = 100, int waittime = 50)
-        {
-            try
-            {
-                return manager.MethodWaitDone(manager, buffer, frameTail, timeout, waittime);
-            }
-            catch (Exception) { }
-            return default(byte[]);
-        }
+        
 
         public static string ScanCode        (ScanCodeInterface manager, int timeout = 1000, int waittime = 50  )
         {

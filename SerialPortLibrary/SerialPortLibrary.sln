@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialPortLibrary", "Serial
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialPortAPI", "SerialPortAPI\SerialPortAPI.csproj", "{29085C48-481C-4FE8-808C-C025F14EBFA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeiCaMicroscopeAPI", "LeiCaMicroscopeAPI\LeiCaMicroscopeAPI.csproj", "{76EB2BA5-71FB-40A6-98D3-DA0575147681}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{29085C48-481C-4FE8-808C-C025F14EBFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29085C48-481C-4FE8-808C-C025F14EBFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29085C48-481C-4FE8-808C-C025F14EBFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EB2BA5-71FB-40A6-98D3-DA0575147681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EB2BA5-71FB-40A6-98D3-DA0575147681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EB2BA5-71FB-40A6-98D3-DA0575147681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EB2BA5-71FB-40A6-98D3-DA0575147681}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

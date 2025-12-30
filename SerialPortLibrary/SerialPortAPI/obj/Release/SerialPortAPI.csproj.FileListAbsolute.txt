@@ -3,3 +3,4 @@ G:\C_Shape\SerialPortLibrary\SerialPortLibrary\SerialPortAPI\bin\Release\SerialP
 G:\C_Shape\SerialPortLibrary\SerialPortLibrary\SerialPortAPI\bin\Release\SerialPortAPI.pdb
 G:\C_Shape\SerialPortLibrary\SerialPortLibrary\SerialPortAPI\obj\Release\SerialPortAPI.dll
 G:\C_Shape\SerialPortLibrary\SerialPortLibrary\SerialPortAPI\obj\Release\SerialPortAPI.pdb
+G:\C_Shape\SerialPortLibrary\SerialPortLibrary\SerialPortAPI\obj\Release\SerialPortAPI.csproj.AssemblyReference.cache

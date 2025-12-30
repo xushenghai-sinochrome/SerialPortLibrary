@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace AppInterfaces
+using AppInterfaces;
+namespace SerialPortAPI
 {
     public class SerialPortController
     {
         private static readonly object IOLocker = new object();
+        public static SerialPortInterface Instance()
+        {
+            return new SerialPortReader();
+        }
         public static int     Open              (SerialPortInterface manager){
             try
             {
