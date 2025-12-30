@@ -41,20 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractInterfaces\AbstractLMicroscope.cs" />
     <Compile Include="AbstractInterfaces\AbstractScanCodeInterface.cs" />
     <Compile Include="AbstractInterfaces\AbstractSerialPortInterface.cs" />
     <Compile Include="AppContexts\LeiCaContext.cs" />
     <Compile Include="AppContexts\SerialContext.cs" />
+    <Compile Include="AppControllers\LMicroscopeController.cs" />
+    <Compile Include="AppControllers\ScanCodeController.cs" />
+    <Compile Include="AppControllers\SerialPortController.cs" />
     <Compile Include="AppInterfaces\Appinterface.cs" />
     <Compile Include="AppInterfaces\ContextInterface.cs" />
     <Compile Include="AppInterfaces\ILMicroscopeInterface.cs" />
     <Compile Include="AppInterfaces\ScanCodeInterface.cs" />
     <Compile Include="AppInterfaces\SerialPortInterface.cs" />
+    <Compile Include="AppReaders\LMicroscopeReader.cs" />
     <Compile Include="AppReaders\ScanCodeReader.cs" />
     <Compile Include="AppReaders\SerialPortReader.cs" />
     <Compile Include="AppUtils\AppTimeLoop.cs" />
-    <Compile Include="AppUtils\MicroscopeControllerID.cs" />
+    <Compile Include="AppUtils\MicControllerID.cs" />
     <Compile Include="AppUtils\MicroscopeUtil.cs" />
+    <Compile Include="AppUtils\MicSettings.cs" />
     <Compile Include="AppUtils\SerialPortUtil.cs" />
     <Compile Include="AppUtils\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

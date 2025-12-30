@@ -31,5 +31,7 @@ namespace AppUtils
         public static byte[] GET_VERSION        = { 0x16, 0x4D, 0x0D, 0x25, 0x25, 0x25, 0x56, 0x45, 0x52, 0x2E };
         public static byte[] DECODE_TAIL        = { 0x0D, 0x0A};
         public static byte[] DECODE_FRAME_TAIL  = { 0x06 };
+        public static int    DEFAULT_RESULT_INT     = default(int       );
+        public static string DEFAULT_RESULT_STR     = default(string    );
     }
 }

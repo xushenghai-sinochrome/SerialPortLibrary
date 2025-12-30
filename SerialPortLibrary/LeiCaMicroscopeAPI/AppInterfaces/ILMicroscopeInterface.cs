@@ -14,6 +14,7 @@ namespace AppInterfaces
         int                             setObjectiveEvents                  (                           );
         int                             setTLFieldEvents                    (                           );
         int                             setTLEvents                         (                           );
+        int                             setSpotLightEvents                  (                           );
         int                             setMasterReset                      (                           );
         int                             setMasterDefault                    (                           );
         int                             setMasterConfigMode                 (bool enable                );
@@ -45,7 +46,7 @@ namespace AppInterfaces
         int                             setZDriverMoveMode                  (bool enable                );
         int                             setZDriverFocusLimitEnable          (bool enable                );
         int                             setZDriverInitMode                  (string value               );
-        (int, int, int, int, int)       getZDriverStatus                    (                           );
+        (int, int, int, int, int, int)  getZDriverStatus                    (                           );
         (int,           int     )       getZDriverManualOptionStatus        (                           );
         (int,           int     )       getZDriverFirmwareStatus            (                           );
         (int,           int     )       getZDriverAbsPosition               (                           );
@@ -68,10 +69,10 @@ namespace AppInterfaces
         int                             setObjectiveRelPosition             (int            value       );
         int                             setObjectiveOperationMode           (int            value       );
         int                             setObjectiveDRYMode                 (string         value       );
-        int                             setObjectiveMethodParameter         (List<int>      value       );
+        int                             setObjectiveMethodParameter         (List<string>   value       );
         int                             setObjectivePathoMode               (int            value       );
         int                             setObjectiveDIP                     (                           );
-        (int, int, int, int)            getObjectiveStatus                  (                           );
+        (int, int, int, int, int)       getObjectiveStatus                  (                           );
         (int,           int)            getObjectiveManualOperationStatus   (                           );
         (int,           int)            getObjectiveAbsPosition             (                           );
         (int,           int)            getObjectiveOperationStatus         (                           );
@@ -79,6 +80,7 @@ namespace AppInterfaces
         (int,           int)            getObjectiveMethodParameter         (int level, int parameter   );
         (int,           int)            getObjectiveMinPosition             (                           );
         (int,           int)            getObjectiveMaxPosition             (                           );
-        (int,           int)            getObjectivePathoMode               (                           );     
+        (int,           int)            getObjectivePathoMode               (                           );
+        ILMicroscopeInterface Instance();
     }
 }

@@ -96,6 +96,21 @@ namespace AppUtils
             return default(String[]);
 
         }
+        public static int  StringListIndexOf(string[] buffer, string data)
+        {
+            int index = -1;
+            int count = 0;
+            foreach(string S in buffer)
+            {
+                if(S.ToLower() == data.ToLower())
+                {
+                    index = count;
+                    break;
+                }
+                count += 1;
+            }
 
+            return index;
+        }
     }
 }
